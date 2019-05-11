@@ -1,4 +1,5 @@
-/* .jumbotron {
-  margin-left: 10px;
-  margin-right: 10px;
-} */
+.jumbotron {
+  display: flex;
+  align-items: center;
+  min-height: 300px;
+}

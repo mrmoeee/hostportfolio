@@ -16,14 +16,14 @@
   <body>
     <!-- gotta see if we can make nav links larger? -->
     <!-- blue or white must decide primary or dark ?? -->
-    <nav class="navbar sticky-top navbar-dark bg-white shadow p-3 mb-3">
+    <nav class="navbar sticky-top  bg-white shadow p-3 mb-3">
       <a class="navbar-brand text-monospace font-weight-bold">MATTHEW MOE</a>
       <ul class="nav justify-content-end">
         <li>
-          <a class="nav-link text-dark" href="#home">HOME</a>
+          <a class="nav-link text-dark active" href="#">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#">PROJECTS</a>
+          <a class="nav-link text-dark" href="#project">PROJECTS</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark" href="#">ABOUT</a>
@@ -38,53 +38,70 @@
     </nav>
     <!-- Add image to jumbotron -->
     <!-- image credits to Paul Brennus, check him out here https://www.artstation.com/paulboy -->
-    <div id="home" class="jumbotron jumbotron-fluid bg-light text-center">
+    
+    <div class="jumbotron jumbotron-fluid bg-light text-center shadow p-2 mb-3">
       <div class="container">
         <h1 class="display-3 text-white text-monospace font-weight-bold">MATTHEW MOE</h1>
         <p class="lead text-white text-monospace font-weight-bold">Software Developer</p>
       </div>
     </div>
+   
+    <section class="about">
+      <div class="container-fluid text-center">
+        <h1 class="display-5 text-monospace">ABOUT ME</h1>
+        <hr class="bg-primary">
+        <!-- want it as lead ? or normal check projects ptag -->
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Alterum significari idem, ut si diceretur, officia media omnia aut pleraque servantem vivere. Quid dubitas igitur mutare principia naturae? Quare attende, quaeso. Itaque haec cum illis est dissensio, cum Peripateticis nulla sane. Voluptatem cum summum bonum diceret, primum in eo ipso parum vidit, deinde hoc quoque alienum; Duo Reges: constructio interrete. Non enim, si malum est dolor, carere eo malo satis est ad bene vivendum. A primo, ut opinor, animantium ortu petitur origo summi boni.</p>
 
+      </div>
+    </section>
     <!-- Fix snake image?, card title, and description -->
     <!-- Fix button links and card descriptions -->
-    <div class="container-fluid">
-      <div class="card-deck">
-        <div class="card text-center">
-          <img class="card-img-top" src="/images/cosmic.png" alt="Card img placeholder">
-          <div class="card-body">
-            <h5 class="card-title">Cosmicsnaps</h5>
-            <p class="card-text">Card description</p>
-          </div>
-          <div class="card-footer bg-white border-0">
-            <a class="btn btn-primary" href="#" role="button">Demo</a>
-            <a class="btn btn-primary" href="#" role="button">GHICON(?)</a>
-          </div>
-        </div>
-        <div class="card text-center">
-          <img class="card-img-top" src="/images/typedraw.png" alt="Card img placeholder">
-          <div class="card-body">
-            <h5 class="card-title">TypeDraw</h5>
-            <p class="card-text">Card Description</p>
-          </div>
-          <div class="card-footer bg-white border-0">
-            <a class="btn btn-primary" href="#" role="button">Demo</a>
-            <a class="btn btn-primary" href="#" role="button">GHICON(?)</a>
-          </div>
-        </div>
-        <div class="card text-center">
-          <img class="card-img-top" src="images/snake.gif" alt="Card img placeholder">
-          <div class="card-body">
-            <h5 class="card-title">Snake</h5>
-            <p class="card-text">Card Description</p>
-          </div>
-          <div class="card-footer bg-white border-0">
-            <a class="btn btn-primary" href="#" role="button">Demo</a>
-            <a class="btn btn-primary" href="#" role="button">GHICON(?)</a>
-          </div>
-        </div>
+    <section id="project">   
+      <div class="container-fluid text-center">
+        <h1 class="display-5 text-monospace">PROJECTS</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Alterum significari idem, ut si diceretur, officia media omnia aut pleraque servantem vivere. Quid dubitas igitur mutare principia naturae? Quare attende, quaeso. Itaque haec cum illis est dissensio, cum Peripateticis nulla sane. Voluptatem cum summum bonum diceret, primum in eo ipso parum vidit, deinde hoc quoque alienum; Duo Reges: constructio interrete. Non enim, si malum est dolor, carere eo malo satis est ad bene vivendum. A primo, ut opinor, animantium ortu petitur origo summi boni.</p>
+        <hr class="bg-primary">
       </div>
-
-    </div>
+      <div class="container-fluid">
+        <div class="card-deck">
+          <div class="card text-center">
+            <img class="card-img-top" src="/images/cosmic.png" alt="Card img placeholder">
+            <div class="card-body">
+              <h5 class="card-title">Cosmicsnaps</h5>
+              <p class="card-text">Card description</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a class="btn btn-primary" href="#" role="button">Demo</a>
+              <a class="btn btn-primary" href="#" role="button">GHICON(?)</a>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img class="card-img-top" src="/images/typedraw.png" alt="Card img placeholder">
+            <div class="card-body">
+              <h5 class="card-title">TypeDraw</h5>
+              <p class="card-text">Card Description</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a class="btn btn-primary" href="#" role="button">Demo</a>
+              <a class="btn btn-primary" href="#" role="button">GHICON(?)</a>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img class="card-img-top" src="images/snake.gif" alt="Card img placeholder">
+            <div class="card-body">
+              <h5 class="card-title">Snake</h5>
+              <p class="card-text">Card Description</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a class="btn btn-primary" href="#" role="button">Demo</a>
+              <a class="btn btn-primary" href="#" role="button">GHICON(?)</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </section>
      
 
     <!-- Optional JavaScript -->

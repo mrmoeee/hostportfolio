@@ -1,11 +1,12 @@
 /* responsive typography (scaling text and components  */
 html {
+  scroll-behavior: smooth;
   font-size: 1rem;
 }
 
 @include media-break-point-up(sm) {
   html {
-    font-size: 1.2rem;
+    font-size: 120rem;
   }
 }
 
@@ -19,4 +20,8 @@ html {
   html {
     font-size: 1.6rem;
   }
+}
+
+body {
+  background-color: red
 }

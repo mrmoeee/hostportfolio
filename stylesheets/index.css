@@ -24,3 +24,9 @@ body {
 .width-hotfix {
   width: 60%;
 }
+
+.js-logo {
+  max-width: 64px;
+  min-height: 64px;
+  margin-right: 20px;
+}

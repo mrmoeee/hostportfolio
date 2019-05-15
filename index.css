@@ -20,3 +20,7 @@ body {
   height: 20vw;
   object-fit: cover;
 }
+
+.width-hotfix {
+  width: 60%;
+}

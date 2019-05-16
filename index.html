@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- TODO: FIX PADDING BETWEEN EACH SECTION (TOO CLOSE RIGHT NOW) -->
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -44,32 +43,32 @@
     </div>
    
     <!-- About section -->
-    <section id="about" class="bg-white mb-3">
+    <section id="about" class="bg-white mb-3 p-3">
       <div class="container-fluid">
         <h1 class="display-5 text-monospace text-center">ABOUT ME</h1>
         <hr class="bg-primary">
         <!-- want it as lead ? or normal check projects ptag -->
         <p class="lead text-center">
           I was born and raised in Bangkok, Thailand and moved to USA at the age of 18. I am a US Citizen and am fully bilingual, able to speak, read, and write in English and Thai. I continued to college right after highschool and became interested in Computer Science with a passion for Front End Developement. I graduated college with a Computer Science Bachelor of Arts. I am a Space enthusiast and love listening to music. Discovering new songs and bands feels almost as good as when I am coding.
-        </p>  
+        </p>
         <div class="row">
-          <div class="col-sm-6">
-            <ul class="list-unstyled">
-              <li class="media">
+          <div class="col-sm-6 border-right">
+            <ul class="list-unstyled p-3 pt-0">
+              <li class="media p-3">
                 <img src="/media_objects/javascript.png" class="ml-3 js-logo" alt="JavaScript Logo">
                 <div class="media-body">
                   <h5 class="mt-0 mb-1">JavaScript</h5>
                   JavaScript allows me to create dynamic, and interactive sites in order to generate positive user experiences. I know how to write client-side scripts that follow ES6 / ES7 syntax.
                 </div>
               </li>
-              <li class="media">
+              <li class="media p-3">
                 <img src="/media_objects/react.png" class="ml-3 js-logo" alt="React Logo">
                 <div class="media-body">
                   <h5 class="mt-0 mb-1">React</h5>
                   React enables me to write single-page applications that are responsive across all platforms. Through React, I gained experience with Redux, and Facebook's architecture Flux. 
                 </div>
               </li>
-              <li class="media">
+              <li class="media p-3">
                 <img src="/media_objects/bootstrap.png" class="ml-3 js-logo" alt="Bootstrap Logo">
                 <div class="media-body">
                   <h5 class="mt-0 mb-1">Bootstrap</h5>
@@ -80,22 +79,22 @@
           </div>
           <div class="col-sm-6">
             <!-- Media Objects here -->
-            <ul class="list-unstyled">
-              <li class="media">
+            <ul class="list-unstyled p-3">
+              <li class="media p-3">
                 <div class="media-body text-right">
                   <h5 class="mt-0 mb-1">Java</h5>
                   Java was my first language that got me hooked on Computer Science. Java exposed me to a variety of data structures and computer science concepts that formed building blocks for all the technologies I have learned, and ones I will learn in the future.
                 </div>
                 <img src="media_objects/Java_logo.jpg" class="ml-3 js-logo border border-dark" alt="Java Logo">
               </li>
-              <li class="media">
+              <li class="media p-3">
                 <div class="media-body text-right">
                   <h5 class="mt-0 mb-1">Ruby on Rails</h5>
                   Ruby on Rails has given me experience developing backend databases for web applications, specifically creating database tables and associations between them. I have used Ruby on Rails with PostgreSQL.
                 </div>
                 <img src="/media_objects/rails.png" class="ml-3 js-logo" alt="Rails Logo">
               </li>
-              <li class="media">
+              <li class="media p-3">
                 <div class="media-body text-right">
                   <h5 class="mt-0 mb-1">Adobe XD</h5>
                   I find Adobe XD to be a fun tool to create interactive wireframes for projects. Some of my wireframes for web applications can be seen on my <a href="https://www.behance.net/mattmoe">BeHance</a>. My profile includes wireframes and a quick video showing the transitions.
@@ -112,7 +111,7 @@
     <!-- Project section -->
     <!-- Fix snake image?, card title, and description -->
     <!-- Fix button links and card descriptions -->
-    <section id="project" class="bg-light mb-3">   
+    <section id="project" class="bg-light mb-3 p-3">   
       <div class="container-fluid text-center">
         <h1 class="display-5 text-monospace">PROJECTS</h1>
         <hr class="bg-primary">
@@ -163,10 +162,10 @@
     <!-- end project -->
      
     <!-- Contact me section -->
-    <section id="contact" class="bg-white mb-3">
+    <section id="contact" class="bg-white mb-3 p-3">
       <div class="container">
         <div class="container width-hotfix">
-          <h1 class="display-5 text-monospace text-center">CONTACT ME</h1>
+          <h1 class="display-5 text-monospace text-center">LETS GET IN TOUCH</h1>
           <hr class="bg-primary">
           <form id="contact-form" name="contact-form" action="mail.php" method="POST">
             <div class="form-row">
@@ -184,7 +183,7 @@
               </div>
             </div>
           </form>
-          <a class="btn btn-primary disabled" onclick="document.getElementById('contact-form').submit();">Submit</a>
+          <a class="btn btn-primary text-white disabled" onclick="document.getElementById('contact-form').submit();">Submit</a>
         </div>
       </div>
     </section>

@@ -10,31 +10,37 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    
     <!-- My own CSS -->
     <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
     <link rel="stylesheet" type="text/scss" href="/stylesheets/index.scss">
     <title>MOE</title>
+
   </head>
-  <body>
+  <body id="home">
+    <script type="text/javascript">
+
+    </script>
+    
     <!-- ADD SCORLLSPY ? -->
-    <nav class="navbar sticky-top  bg-white shadow p-3 mb-3">
+    <nav class="navbar fixed-top bg-white shadow p-3 mb-3">
       <a class="navbar-brand text-monospace font-weight-bold">MATTHEW MOE</a>
-      <ul class="nav justify-content-end">
-        <li>
-          <a class="nav-link text-dark active" href="#">HOME</a>
+      <ul id="nav" class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" onclick="document.getElementById('home').scrollIntoView(true);">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#about">ABOUT</a>
+          <a class="nav-link" onclick="document.getElementById('about').scrollIntoView(true);">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#project">PROJECTS</a>
+          <a class="nav-link" onclick="document.getElementById('project').scrollIntoView(true);">PROJECTS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#contact">CONTACT</a>
+          <a class="nav-link" onclick="document.getElementById('contact').scrollIntoView(true);">CONTACT</a>
         </li>
       </ul>
     </nav>
+    
 
     <!-- image credits to Paul Brennus, check him out here https://www.artstation.com/paulboy -->   
     <div class="jumbotron jumbotron-fluid bg-light text-center shadow p-2 mb-3">
@@ -73,7 +79,7 @@
                 <img src="/media_objects/bootstrap.png" class="ml-3 js-logo" alt="Bootstrap Logo">
                 <div class="media-body">
                   <h5 class="mt-0 mb-1">Bootstrap</h5>
-                  Bootstrap empowers me to create responsive mobile-first web applications alongisde HTML, CSS, SCSS, and JavaScript. With Bootstrap, I am confident I can create a web application from a designs, fast.
+                  Bootstrap empowers me to create responsive mobile-first web applications alongside HTML, CSS, SCSS, and JavaScript. With Bootstrap, I am confident I can create web applications from designs, fast.
                 </div>
               </li>
             </ul>
@@ -110,8 +116,6 @@
     <!-- end about -->
 
     <!-- Project section -->
-    <!-- Fix snake image?, card title, and description -->
-    <!-- Fix button links and card descriptions -->
     <section id="project" class="bg-light mb-3 p-3">   
       <div class="container-fluid text-center">
         <h1 class="display-5 text-monospace">PROJECTS</h1>
@@ -125,7 +129,7 @@
             <img class="card-img-top" src="/images/cosmic.png" alt="Card img placeholder">
             <div class="card-body ">
               <h5 class="card-title text-center border-bottom border-dark">Cosmicsnaps</h5>
-              <p class="card-text text-center">Cosmicsnaps is a Space-themed clone of a website called 500px, an Image hosting site. I had to incorporate Amazon Webservices, and Active storage to implement CRUD functionality for when users upload images. </p>
+              <p class="card-text text-center">Cosmicsnaps is a Space-themed clone of a website called 500px, an Image hosting site. I had to incorporate Amazon Webservices, and Active storage to implement CRUD functionality to enable users to upload images. </p>
             </div>
             <p class="card-text text-center text-muted">Technologies used: JavaScript HTML, CSS, React.js, Redux, PostgreSQL, Ruby on Rails</p>
             <div class="card-footer bg-white">
@@ -137,7 +141,7 @@
             <img class="card-img-top border-bottom border-light" src="/images/typedraw.png" alt="Card img placeholder">
             <div class="card-body">
               <h5 class="card-title text-center border-bottom border-dark">TypeDraw</h5>
-              <p class="card-text text-center">TypeDraw is a multi-platform mobile and web application for real-time collaboration on a digital whiteboard. This was a group project involving me and 3 other developers. The team was split up into Front End / Backend. I was part of the Front End team and used React Native.</p>
+              <p class="card-text text-center">TypeDraw is a multi-platform mobile and web application for real-time collaboration on a digital whiteboard. This was a group project involving me and 3 other developers. Our team was splot into Front End and Backend teams. I was part of the Front End team and used React Native.</p>
             </div>
             <p class="card-text text-center text-muted">Technologies used: MongoDB, Express, React/Reat Native, Node.js</p>
             <div class="card-footer bg-white">
@@ -149,7 +153,7 @@
             <img class="card-img-top" src="images/snake.gif" alt="Card img placeholder">
             <div class="card-body">
               <h5 class="card-title text-center border-bottom border-dark">Snake</h5>
-              <p class="card-text text-center">Snake is an implementation on the classic snake game in which I used my creativity to try and improve gameplay. The code was written using vanilla JavaScript and I used a Canvas to deploy an animation loop for gameplay.</p>
+              <p class="card-text text-center">Snake is my take on the classic snake game. I added visual obfuscations and a reverse control mechanic when certain foods are eaten out of order. The code was written using vanilla JavaScript and I used a Canvas with an animation loop for gameplay.</p>
             </div>
             <p class="card-text text-center text-muted">Technologies used: JavaScript, CSS, HTML5 Canvas</p>
             <div class="card-footer bg-white">
@@ -193,6 +197,7 @@
     <!-- FOOTER STUFF ADD ICONS FOR LINKEDIN GITHUB ANGELLIST -->
     <footer class="footer bg-primary">FOOTER STUFF</footer>
     <!-- End Footer -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -47,6 +47,18 @@ body {
   background-color: black;
 }
 
+.valid-name {
+  z-index: -1;
+}
+.valid {
+  color: #3BAF57;
+}
+
+.invalid {
+  color: red;
+}
+
+
 /* .fade-in {
   
 } */

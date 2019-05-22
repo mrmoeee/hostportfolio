@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -19,11 +18,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="javascript/validate.js"></script>
-
   </head>
+
   <body id="home">
-    <!-- ADD SCORLLSPY ? -->
     <nav id="navbar" class="navbar fixed-top bg-white shadow p-3 mb-3">
       <a class="navbar-brand text-monospace font-weight-bold">MATTHEW MOE</a>
       <ul id="nav" class="nav justify-content-end">
@@ -50,7 +49,6 @@
           <p class="lead text-white text-monospace font-weight-bold text-shadow">Software Developer, Space Enthusiast, Music Lover</p>
         </div>
       </div>
-     
       <!-- About section -->
       <section id="about" class="bg-white mb-3 p-3">
         <div class="container-fluid">
@@ -86,7 +84,6 @@
               </ul>
             </div>
             <div class="col-sm-6">
-              <!-- Media Objects here -->
               <ul class="list-unstyled p-3">
                 <li class="media p-3">
                   <div class="media-body text-right">
@@ -113,9 +110,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> 
       <!-- end about -->
-  
+      
       <!-- Project section -->
       <section id="project" class="bg-light mb-3 p-3">   
         <div class="container-fluid text-center">
@@ -173,7 +170,7 @@
             <h1 class="display-5 text-monospace text-center">LETS GET IN TOUCH</h1>
             <p class="lead text-center">Are you looking for a developer? Look no further, I am here. Please reach out and send me a message. I am seeking employment and am willing to relocate. </p>
             <hr class="bg-primary">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST" onsubmit="validateForm()">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Name</label>
@@ -191,8 +188,9 @@
                   <div id="valid-message" class="valid-message"></div>
                 </div>
               </div>
+              <div class="g-recaptcha" data-sitekey="6Lcn_KQUAAAAAOxNAp1o5E-fB2JECxOmoU3DfyQa"></div>
             </form>
-            <a class="btn btn-secondary btn-lg btn-block text-white" onclick="validateForm()">Submit</a>
+            <a class="btn btn-secondary btn-lg btn-block text-white" name='submit' onclick="validateForm()">Submit</a>
             <hr class="bg-primary fa-3x">
             <p class="lead text-center">You can also find me on:</p>
             <div class="row justify-content-center">

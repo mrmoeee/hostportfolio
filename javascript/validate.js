@@ -29,16 +29,19 @@ function validateForm() {
     validEmail[0].className = 'valid-email invalid';
     validEmail[0].innerHTML = 'Email cannot be empty!';
   } else {
-     let expression = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let expression = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!expression.test(String(email).toLowerCase())) {
       validEmail[0].className = 'valid-email invalid';
       validEmail[0].innerHTML = 'Email format may be wrong';
+    } else {
+      validEmail[0].className = 'valid-email valid';
+      validEmail[0].innerHTML = 'Looks Good!';
     }
-    validEmail[0].className = 'valid-email valid';
-    validEmail[0].innerHTML = 'Looks Good!';
   }
   if (wasValid()) {
     document.getElementById('contact-form').submit();
+  } else {
+    return false;
   }
 }
 

@@ -6,7 +6,7 @@ html {
 body {
   position: relative;
   background-color: #F8F9FA;
-  padding-top: 86px;
+  /* padding-top: 86px; */
 }
 
 .jumbotron {

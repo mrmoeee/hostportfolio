@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!-- TODO -->
+<!-- IMG RESIZING NEED PADDING TOP FOR BODY ON MOBILE DEVICES -->
+<!-- CAPTCHA RESIZING -->
+<!-- FORM RESIZING FIX THE HOT FIX -->
+<!-- CREATE SUCCESS MESSAGE WHEN EMAIL IS SENT. STAY ON SAME PAGE -->
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -23,23 +28,25 @@
   </head>
 
   <body id="home">
-    <nav id="navbar" class="navbar fixed-top bg-white shadow p-3 mb-3">
-      <a class="navbar-brand text-monospace font-weight-bold">MATTHEW MOE</a>
-      <ul id="nav" class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link" onclick="document.getElementById('home').scrollIntoView(true);">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" onclick="document.getElementById('about').scrollIntoView(true);">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" onclick="document.getElementById('project').scrollIntoView(true);">PROJECTS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" onclick="document.getElementById('contact').scrollIntoView(true);">CONTACT</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="sticky-top">
+      <nav id="navbar" class="navbar bg-white shadow p-3 mb-3">
+        <a class="navbar-brand text-monospace font-weight-bold">MATTHEW MOE</a>
+        <ul id="nav" class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" onclick="document.getElementById('home').scrollIntoView(true);">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="document.getElementById('about').scrollIntoView(true);">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="document.getElementById('project').scrollIntoView(true);">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="document.getElementById('contact').scrollIntoView(true);">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <main>
       <!-- image credits to Paul Brennus, check him out here https://www.artstation.com/paulboy -->   
@@ -188,7 +195,8 @@
                   <div id="valid-message" class="valid-message"></div>
                 </div>
               </div>
-              <div class="g-recaptcha" data-sitekey="6Lcn_KQUAAAAAOxNAp1o5E-fB2JECxOmoU3DfyQa"></div>
+              <div class="g-recaptcha" data-sitekey="6Lcn_KQUAAAAAOxNAp1o5E-fB2JECxOmoU3DfyQa
+              "></div>
             </form>
             <a class="btn btn-secondary btn-lg btn-block text-white" name='submit' onclick="validateForm()">Submit</a>
             <hr class="bg-primary fa-3x">

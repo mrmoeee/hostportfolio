@@ -158,7 +158,7 @@
               <img class="card-img-top" src="images/snake.gif" alt="Card img placeholder">
               <div class="card-body">
                 <h5 class="card-title text-center border-bottom border-dark">Snake</h5>
-                <p class="card-text text-center">Snake is my take on the classic snake game. I added visual obfuscations and a reverse control mechanic when certain foods are eaten out of order. The code was written using vanilla JavaScript and I used a Canvas with an animation loop for gameplay.</p>
+                <p class="card-text text-center">Snake is my take on the classic snake game. I added visual obfuscations and a reverse control mechanic when certain foods are eaten out of order. Visual obfuscations come into play after 60 seconds of gameplay to not overwhelm the player in the beginning. Obfuscations are larger the closer they are to the edge and shrink as they move into the center</p>
               </div>
               <p class="card-text text-center text-muted">Technologies used: JavaScript, CSS, HTML5 Canvas</p>
               <div class="card-footer bg-white">
@@ -195,8 +195,7 @@
                   <div id="valid-message" class="valid-message"></div>
                 </div>
               </div>
-              <div class="g-recaptcha pb-3" data-sitekey="6Lcn_KQUAAAAAOxNAp1o5E-fB2JECxOmoU3DfyQa
-              "></div>
+              <div class="g-recaptcha" data-sitekey="6Lcn_KQUAAAAAOxNAp1o5E-fB2JECxOmoU3DfyQa" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
             </form>
             <a class="btn btn-secondary btn-lg btn-block text-white" name='submit' onclick="validateForm()">Submit</a>
             <hr class="bg-primary fa-3x">

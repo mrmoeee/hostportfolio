@@ -27,6 +27,10 @@ body {
   width: 77%;
 }
 
+.hover-fix:hover {
+  cursor: pointer;
+}
+
 .js-logo {
   min-width: 64px;
   max-height: 64px;

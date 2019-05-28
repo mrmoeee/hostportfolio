@@ -8,7 +8,6 @@ function validateForm() {
   let validMsg = document.getElementsByClassName('valid-message');
   
   if (name === "") {
-    console.log('name cannot be empty');
     validName[0].className = 'valid-name invalid';
     validName[0].innerHTML = 'Name cannot be empty!';
   } else {
@@ -17,7 +16,6 @@ function validateForm() {
   }
 
   if (message === "") {
-    console.log('message cannot be empty');
     validMsg[0].className = 'valid-message invalid';
     validMsg[0].innerHTML = ' Message cannot be empty!';
   }  else {
@@ -38,8 +36,34 @@ function validateForm() {
       validEmail[0].innerHTML = 'Looks Good!';
     }
   }
+  
   if (wasValid()) {
-    document.getElementById('contact-form').submit();
+    document.getElementById('status').innerHTML = "Sending. . .";
+    let formData = {
+      'name': $('input[name=name]').val(),
+      'email': $('input[name=email]').val(),
+      'message': $('textarea[name=message]').val(),
+      captcha: grecaptcha.getResponse()
+    };
+    // console.log(formData);
+    $.ajax({
+      type: 'POST',
+      url: 'mail.php',
+      data: formData,
+      success: function(data, textStatus, jqXHR) {
+        // console.log('submitted');
+        $('#status').text(data.message);
+        if (data.code) {
+          $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+          resetForms();
+          grecaptcha.reset();
+        }
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+        $('#status').text(jqXHR); 
+      }
+    });
+    // document.getElementById('contact-form').submit();
   } else {
     return false;
   }
@@ -52,3 +76,20 @@ function wasValid() {
     return true;
   }
 }
+
+function resetForms() { 
+  let validName = document.getElementsByClassName('valid-name');
+  let validEmail = document.getElementsByClassName('valid-email');
+  let validMsg = document.getElementsByClassName('valid-message');
+
+  validName[0].className = 'valid-name';
+  validEmail[0].className = 'valid-email';
+  validMsg[0].className = 'valid-message';
+
+  validName[0].innerHTML = "";
+  validEmail[0].innerHTML = "";
+  validMsg[0].innerHTML = "";
+
+}
+
+

@@ -8,7 +8,7 @@ I created my Portfolio using Bootstrap, HTML, PHP, and a little bit of JQuery ($
 ---
 There was one small issue / bug that set me back, but I overcame that and learned a little something.
 
-My first problem was with Googles ReCaptcha, I was only getting the ResponseKey when the form was submitted through 'g-recaptcha-response', and was not getting the key when the page stayed the same through Ajax. That was fixed using an If statement in my php file checking whether or not 'g-recaptcha-response' existed, and instead using the key given by Ajax through formData.
+My first problem was with Googles ReCaptcha, I was only getting the ResponseKey when the form was submitted through 'g-recaptcha-response', and was not getting the key when the page stayed the same through Ajax. That was fixed using an If statement in my php file checking whether or not 'g-recaptcha-response' existed, and instead using the key given by Ajax through formData (captcha).
 
 ```JavaScript
   let formData = {

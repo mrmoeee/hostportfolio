@@ -179,30 +179,69 @@
               <h1 class="display-5 text-monospace text-center">LETS GET IN TOUCH</h1>
               <p class="lead text-center">Are you looking for a developer? Look no further, I am here. Please reach out and send me a message. I am seeking employment and am willing to relocate. </p>
               <hr class="bg-primary">
-              <!-- form start -->
-              <!-- <form id="contact-form" name="contact-form" action="mail.php" method="POST" onsubmit="validateForm()">
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" class="form-control" placeholder="Name">
-                    <div id="valid-name" class="valid-name"></div>
+              
+              <div class="container">
+                <div class="row text-center">
+                  <div class="col">
+                    <p class="lead">Download my Resume!</p>
+                    <a href="/moe_resume.pdf" class="btn btn-outline-dark hover-fix" style="border: none" download><i class="fas fa-file-download fa-3x"></i>
+                    </a>
                   </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputEmail">Email</label>
-                    <input type="text" id="email" name="email" class="form-control" placeholder="Email">
-                    <div id="valid-email" class="valid-email"></div>
-                  </div>
-                  <div class="form-group col-md-12">
-                    <label>Your Message</label>
-                    <textarea type="text" id="message" name="message" class="form-control" rows="8" placeholder="Your Message"></textarea>
-                    <div id="valid-message" class="valid-message"></div>
+                  <div class="col">
+                    <p class="lead">Send me an Email!</p>
+                    <button class="btn btn-outline-dark hover-fix" style="border: none" data-toggle="modal" data-target="#form-modal"><i class="far fa-envelope-open fa-3x"></i></button>
                   </div>
                 </div>
-                <div class="g-recaptcha" data-sitekey="6Lcn_KQUAAAAAOxNAp1o5E-fB2JECxOmoU3DfyQa" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
-              </form> -->
-              <!-- <a class="btn btn-secondary btn-lg btn-block text-white hover-fix" name='submit' onclick="validateForm()">Submit</a> -->
+              </div>
+              <!-- form start / modal -->
+              <div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="form-modal-label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modal-title-label">Contact me!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="contact-form" name="contact-form" action="mail.php" method="POST" onsubmit="validateForm()">
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Name">
+                            <div id="valid-name" class="valid-name"></div>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail">Email</label>
+                            <input type="text" id="email" name="email" class="form-control" placeholder="Email">
+                            <div id="valid-email" class="valid-email"></div>
+                          </div>
+                          <div class="form-group col-md-12">
+                            <label>Your Message</label>
+                            <textarea type="text" id="message" name="message" class="form-control" rows="8" placeholder="Your Message"></textarea>
+                            <div id="valid-message" class="valid-message"></div>
+                          </div>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6Lcn_KQUAAAAAOxNAp1o5E-fB2JECxOmoU3DfyQa" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <a class="btn btn-secondary btn-lg btn-block text-white hover-fix" name='submit' onclick="validateForm()">Submit</a>
+                          </div>
+                          <div class="w-100"></div>
+                          <div class="col">
+                            <div id="status" class="status text-dark h5 pt-3 text-center"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!-- form end -->
-              <div id="status" class="status text-dark h5 pt-3 text-center"></div>
               <hr class="bg-primary fa-3x">
               <p class="lead text-center">You can also find me on:</p>
               <div class="row justify-content-center">

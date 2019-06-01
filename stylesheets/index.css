@@ -49,6 +49,7 @@ body {
 
 .btn:hover {
   background-color: black;
+  color: white! important;
 }
 
 .valid-name {
